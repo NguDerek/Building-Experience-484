@@ -1,0 +1,34 @@
+{
+    "name": "XRInputActions",
+    "maps": [
+        {
+            "name": "XRGameplay",
+            "id": "026a59fb-0234-4b4e-b9e6-68a851558747",
+            "actions": [
+                {
+                    "name": "Duplicate",
+                    "type": "Button",
+                    "id": "cf8dcef1-fac8-4443-ba33-4e9466a8471b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6b047713-fe55-48f6-abb5-194deac1307b",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Duplicate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
