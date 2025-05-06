@@ -12,12 +12,16 @@ public class GrabbableObject : MonoBehaviour
     private bool isHeld = false;
     public LastGrabbed grabManager;
 
+    private int defaultLayerMask;
+
     private void Awake() {
         grabInteractable = GetComponent<XRGrabInteractable>();
         rb = GetComponent<Rigidbody>();
 
         grabInteractable.selectEntered.AddListener(OnGrab);
         grabInteractable.selectExited.AddListener(OnRelease);
+
+        defaultLayerMask = 1 << LayerMask.NameToLayer("Default");
     }
 
     private void Destroy() {
@@ -38,8 +42,10 @@ public class GrabbableObject : MonoBehaviour
         if (isFrozen) {
             // Freeze object
             rb.isKinematic = true;
+            rb.excludeLayers = defaultLayerMask;
         } else {
             rb.isKinematic = false;
+            rb.excludeLayers = 0;
         }
 
     }
