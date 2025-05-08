@@ -4090,6 +4090,10 @@ PrefabInstance:
       propertyPath: grabManager
       value: 
       objectReference: {fileID: 2047158532}
+    - target: {fileID: 2374262285688888864, guid: c987f39c3b58bbf40827efafbfc3a8c2, type: 3}
+      propertyPath: toggleFreezeAction
+      value: 
+      objectReference: {fileID: 8187883806304191266, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 4602208245540833438, guid: c987f39c3b58bbf40827efafbfc3a8c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.73
@@ -4259,6 +4263,10 @@ PrefabInstance:
       propertyPath: grabManager
       value: 
       objectReference: {fileID: 2047158532}
+    - target: {fileID: 3337385075801672111, guid: 80e2e0af3bce5a74e823e4bced411a7f, type: 3}
+      propertyPath: toggleFreezeAction
+      value: 
+      objectReference: {fileID: 8187883806304191266, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 3367332413294118373, guid: 80e2e0af3bce5a74e823e4bced411a7f, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 0
@@ -4348,6 +4356,10 @@ PrefabInstance:
       propertyPath: grabManager
       value: 
       objectReference: {fileID: 2047158532}
+    - target: {fileID: 7953514472293444324, guid: e1612e2d6d5219f49a286288c7ebae63, type: 3}
+      propertyPath: toggleFreezeAction
+      value: 
+      objectReference: {fileID: 8187883806304191266, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
