@@ -11,6 +11,7 @@ public class GrabbableObject : MonoBehaviour
     private bool isFrozen = false;
     private bool isHeld = false;
     public LastGrabbed grabManager;
+    public InputActionReference toggleFreezeAction;
 
     private int defaultLayerMask;
 
@@ -30,9 +31,11 @@ public class GrabbableObject : MonoBehaviour
     }
 
     private void OnGrab(SelectEnterEventArgs args) {
-        grabManager.SetLastGrabbed(grabInteractable);
+        grabManager.SetLastGrabbed(gameObject);
 
         isHeld = true;
+
+        toggleFreezeAction.action.Enable();
     }
 
     private void OnRelease(SelectExitEventArgs args) {
@@ -48,15 +51,14 @@ public class GrabbableObject : MonoBehaviour
             rb.excludeLayers = 0;
         }
 
+        toggleFreezeAction.action.Disable();
+
     }
 
     private void Update()
     {
-        if (isHeld) {
-            // Check for primary button press
-            if (Keyboard.current.bKey.wasPressedThisFrame) {
-                isFrozen = !isFrozen;
-            }
+        if (isHeld && toggleFreezeAction.action.triggered) {
+            isFrozen = !isFrozen;
         }   
     }
 }

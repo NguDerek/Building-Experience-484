@@ -6,9 +6,9 @@ public class LastGrabbed : MonoBehaviour
 {
     
     public static LastGrabbed Instance;
-    public XRGrabInteractable LastGrabbedObject;
+    public GameObject LastGrabbedObject;
 
-    public void SetLastGrabbed(XRGrabInteractable interactable)
+    public void SetLastGrabbed(GameObject interactable)
     {
         LastGrabbedObject = interactable;
         Debug.Log("Last grabbed object: " + interactable.name);
