@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/GisselleTempScene.unity
+    guid: 12d7b19bf787aec4a908a4688b251ed7
+  - enabled: 1
+    path: Assets/Scenes/Room.unity
+    guid: 371d1f0ce7ceec249b86b00d1505ed1d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5abe0ea221ad27c4aa89ba628770b178, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -26,6 +26,9 @@ public class ColorChangerUI : MonoBehaviour
             return;
         }
 
+        Debug.Log("R val: " + redSlider.value);
+        Debug.Log("G val: " + greenSlider.value);
+        Debug.Log("B val: " + blueSlider.value);
         Color newColor = new Color(redSlider.value, greenSlider.value, blueSlider.value);
 
         Debug.Log("Hi!");
@@ -33,7 +36,6 @@ public class ColorChangerUI : MonoBehaviour
         Debug.Log(greenSlider.value);
         Debug.Log(blueSlider.value);
         
-        // You may want to use material instead of `sharedMaterial` if you're changing the instance's color
         renderer.material.color = newColor;
     }
 }
