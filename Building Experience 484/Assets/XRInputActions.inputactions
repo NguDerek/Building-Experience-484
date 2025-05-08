@@ -6,9 +6,18 @@
             "id": "026a59fb-0234-4b4e-b9e6-68a851558747",
             "actions": [
                 {
-                    "name": "Duplicate",
+                    "name": "Grab",
                     "type": "Button",
-                    "id": "cf8dcef1-fac8-4443-ba33-4e9466a8471b",
+                    "id": "6ff212a7-c84e-4c49-ac2b-2ceee06d62d9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Freeze",
+                    "type": "Button",
+                    "id": "98806067-5784-4880-80ea-625f08dd2b44",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -18,12 +27,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "6b047713-fe55-48f6-abb5-194deac1307b",
-                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "id": "1a2849de-ca64-49cc-a4bd-f3c8d43575af",
+                    "path": "<XRController>{RightHand}/{PrimaryTrigger}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Duplicate",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfe343af-553a-4b2a-a278-5f4c8eaaf521",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Freeze",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
