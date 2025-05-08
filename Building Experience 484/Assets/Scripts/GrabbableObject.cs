@@ -31,7 +31,7 @@ public class GrabbableObject : MonoBehaviour
     }
 
     private void OnGrab(SelectEnterEventArgs args) {
-        grabManager.SetLastGrabbed(grabInteractable);
+        grabManager.SetLastGrabbed(gameObject);
 
         isHeld = true;
 

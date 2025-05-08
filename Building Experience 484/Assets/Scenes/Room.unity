@@ -469,6 +469,7 @@ MonoBehaviour:
   redSlider: {fileID: 1070844793}
   greenSlider: {fileID: 1478322767}
   blueSlider: {fileID: 1780201555}
+  lastGrabbedManager: {fileID: 2047158532}
 --- !u!1 &468736790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,12 +1609,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1204884546}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 255
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 255
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 405367916}
+        m_TargetAssemblyTypeName: ColorChangerUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1074048714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,12 +2281,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1473585939}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 255
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 255
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 405367916}
+        m_TargetAssemblyTypeName: ColorChangerUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1484844911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,12 +3466,24 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1074048715}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 255
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 255
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 405367916}
+        m_TargetAssemblyTypeName: ColorChangerUI, Assembly-CSharp
+        m_MethodName: UpdateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1827656437
 GameObject:
   m_ObjectHideFlags: 0
