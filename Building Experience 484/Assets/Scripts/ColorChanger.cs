@@ -19,14 +19,19 @@ public class ColorChangerUI : MonoBehaviour
     void UpdateColor()
     {
         UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabbed = LastGrabbed.Instance?.LastGrabbedObject;
-        if (grabbed == null) return;
+        if (grabbed == null){ 
+            Debug.Log("No object grabbed");
+            return;
+            }
 
         Renderer renderer = grabbed.GetComponent<Renderer>();
         if (renderer == null) return;
 
+        Debug.Log("R val: " + redSlider.value);
+        Debug.Log("G val: " + greenSlider.value);
+        Debug.Log("B val: " + blueSlider.value);
         Color newColor = new Color(redSlider.value, greenSlider.value, blueSlider.value);
         
-        // You may want to use material instead of `sharedMaterial` if you're changing the instance's color
         renderer.material.color = newColor;
     }
 }
